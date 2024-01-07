@@ -1,3 +1,3 @@
-wordCounter = input("Enter a word: ")
-wordLen = len(wordCounter)
-print("Length of \'", wordCounter, "\' is", wordLen)
+wordCount = input("Enter a word: ")
+wordLen = len(wordCount)
+print("Length of \'", wordCount, "\' is", wordLen)
