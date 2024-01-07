@@ -1,4 +1,4 @@
-![Pyhton-Programming](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRjnbx_mWNZ7yIOtDxi-w63myxyJVVFbKREkpvO5Ex_EAab7ebT75z7yoOyZWAlR54o4&usqp=CAU)
+![Pyhton-Programming](https://heicodersacademy.com/blog/wp-content/uploads/2022/04/7-reasons-why-you-should-learn-python.jpeg)
 # Python-Programming
 This repository contains all the codes for Python which I performed when I was learning.
 <br>
