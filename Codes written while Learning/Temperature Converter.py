@@ -2,8 +2,8 @@ start = int(input("To start ENTER 1: "))    # Start
 
 # Start of Loop
 while start == 1:
-  
-  temperature = int(input("Enter the temperature: "))       # Enter Temperature
+
+  temperature = float(input("Enter the temperature: "))       # Enter Temperature
   print("C for Celsius")
   print("K for Kelvin")
   print("F for Farenheit")
@@ -14,10 +14,10 @@ while start == 1:
     unitTo = input("Enter the unit you want to convert to: ")
     if unitTo == 'f' or unitTo == 'F':      # Farenheit
       conversion = (temperature * 1.8) + 32
-      print(temperature, "Celsius is", conversion, "Farenheit")
+      print(f"{temperature:.2f} Celsius = {conversion:.2f} Farenheit")
     elif unitTo == 'k' or unitTo == 'K':        # Kelvin
       conversion = temperature + 273.15
-      print(temperature, "Celsius is", conversion, "Kelvin")
+      print(f" {temperature:.2f} Celsius = {conversion:.2f} Kelvin")
     else:       # Wrong Input
       print("Wrong Input")
 
@@ -26,10 +26,10 @@ while start == 1:
     unitTo = input("Enter the unit you want to convert to: ")
     if unitTo == 'f' or unitTo == 'F':      # Farenheit
       conversion = (temperature - 273.15) * 1.8 + 32
-      print(temperature, "Kelvin is", conversion, "Farenheit")
+      print(f"{temperature:.2f} Kelvin = {conversion:.2f} Farenheit")
     elif unitTo == 'c' or unitTo == 'C':        # Celsius
       conversion = temperature - 273.15
-      print(temperature, "Kelvin is", conversion, "Celsius")
+      print(f" {temperature:.2f} Kelvin = {conversion:.2f} Celsius")
     else:       # Wrong Input
       print("Wrong Input")
 
@@ -38,10 +38,10 @@ while start == 1:
     unitTo = input("Enter the unit you want to convert to: ")
     if unitTo == 'k' or unitTo == 'K':      # Kelvin
       conversion = (temperature - 32) * 0.55 + 273.15
-      print(temperature, "Farenheit is", conversion, "Kelvin")
+      print(f"{temperature:.2f} Farenheit = {conversion:.2f} Kelvin")
     elif unitTo == 'c' or unitTo == 'C':        # Celsius
       conversion = (temperature - 32) * 0.55
-      print(temperature, "Farenheit is", conversion, "Celsius")
+      print(f" {temperature:.2f} Farenheit = {conversion:.2f} Celsius")
     else:       # Wrong Input
       print("Wrong Input")
 
