@@ -1,30 +1,42 @@
-print("--x--SIMPLE CALCULATOR--x--\n")
-start = int(input("To START enter 1: "))    # Starting point of the program
+def Addition(a,b):
+  print(f"\n{a} + {b} = {a+b}")  # Addition
+
+def Subtraction(a,b):
+  print(f"\n{a} - {b} = {a-b}")  # Subtraction
+
+def Multiplication(a,b):
+  print(f"\n{a} * {b} = {a*b}")  # Multiplication
+
+def Division(a,b):
+  if b == 0:
+    print("\nCannot divide by zero")  # If the number is zero
+  else:
+    print(f"\n{a} / {b} = {a/b}")  # If the number is non-zero
+
+start = 1   # Starting point of the program
 while(start == 1):
-  a = int(input("Enter the first number: "))  # Accepting first number
-  b = int(input("Enter the second number: "))  # Accepting second number
-  print("Enter which operation would you like to perform?")  # Accepting operation
-  print("\'1\' for Addition")
-  print("\'2\' for Subtraction")
-  print("\'3\' for Multiplication")
-  print("\'4\' for Division")
-  print("\'5\' for Modulus")
-  operation = int(input("Enter the operation: "))
-  match operation:
-      case 1:
-          print(a, "+", b, "=", a + b)  # Addition
-      case 2:
-          print(a, "-", b, "=", a - b)  # Subtraction
-      case 3:
-          print(a, "*", b, "=", a * b)  # Multiplication
-      case 4 if b == 0:
-          print("Cannot divide by zero")  # If the number is zero
-      case 4:
-          print(a, "/", b, "=", a / b)  # If the number is non-zero
-      case 5:
-          print(a, "%", b, "=", a % b)  # Modulus
-      case _:
-          print("Invalid operation")  # Invalid Operaion
-  start = int(input("To CONTINUE enter \'1\', to STOP enter \'0\': "))  # To continue/stop the program
+  try:
+    a = int(input("Enter the first number: "))  # Accepting first number
+    b = int(input("Enter the second number: "))  # Accepting second number
+    print("Enter which operation would you like to perform?")  # Accepting operation
+    print("\'+\' for Addition")
+    print("\'-\' for Subtraction")
+    print("\'*\' for Multiplication")
+    print("\'/\' for Division")
+    operation = (input("\nEnter the operation: "))
+    match operation:
+        case "+":
+          Addition(a,b)
+        case "-":
+          Subtraction(a,b)
+        case "*":
+          Multiplication(a,b)
+        case "/":
+          Division(a,b)
+        case _:
+            print("\nInvalid operation")  # Invalid Operaion
+  except ValueError:
+    print("Please enter a valid number")
+  start = int(input("\nTo CONTINUE enter \'1\', to STOP enter \'0\': "))  # To continue/stop the program
 else:
   print("\n--x--Thank you for using the calculator.--x--")
