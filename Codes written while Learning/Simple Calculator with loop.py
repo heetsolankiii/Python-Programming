@@ -1,17 +1,18 @@
-def Addition(a,b):
-  print(f"\n{a} + {b} = {a+b}")  # Addition
+def Addition(a,b):  # Addition
+  print(f"\n{a} + {b} = {a+b}")
 
-def Subtraction(a,b):
-  print(f"\n{a} - {b} = {a-b}")  # Subtraction
+def Subtraction(a,b):  # Subtraction
+  print(f"\n{a} - {b} = {a-b}")
 
-def Multiplication(a,b):
-  print(f"\n{a} * {b} = {a*b}")  # Multiplication
+def Multiplication(a,b):  # Multiplication
+  print(f"\n{a} * {b} = {a*b}")
 
-def Division(a,b):
+def Division(a,b):   # Division
   if b == 0:
     print("\nCannot divide by zero")  # If the number is zero
   else:
     print(f"\n{a} / {b} = {a/b}")  # If the number is non-zero
+
 
 start = 1   # Starting point of the program
 while(start == 1):
